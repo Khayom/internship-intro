@@ -1,2 +1,0 @@
-name = 'console'
-print(name)

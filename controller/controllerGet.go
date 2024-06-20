@@ -1,7 +1,11 @@
 package controller
 
-import "github.com/gin-gonic/gin"
+import (
+	"intro/golang/structures"
 
-func Get(c *gin.Context)  {
-	c.JSON(200, "Get Check")
+	"github.com/gin-gonic/gin"
+)
+
+func GetMessage(c *gin.Context)  {
+	c.JSON(200, structures.MessageSlice)
 }
